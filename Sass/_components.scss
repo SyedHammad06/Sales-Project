@@ -1,0 +1,86 @@
+.nav {
+  font-size: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  &__item {
+    margin-right: 2.4rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-black;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+}
+.logo-container {
+  &__logo {
+    width: 4rem;
+    height: 8rem;
+    border-radius: 8rem 0 0 8rem;
+    margin-right: 8rem;
+    background-color: $color-blue-1;
+    position: relative;
+    &--1 {
+      width: 6rem;
+      height: 3rem;
+      border-radius: 0 0 6rem 6rem;
+      margin-right: 8rem;
+      position: absolute;
+      bottom: 1rem;
+      left: 1.2rem;
+      background-color: $color-yellow-1;
+    }
+  }
+}
+.main-heading {
+  width: 40%;
+  font-size: 8.5rem;
+  font-weight: 200;
+  margin-top: 18.8rem;
+  span{
+    display: inline-block;
+    border-bottom: .6rem solid $text-black;
+  }
+}
+.main-text {
+  width: 33%;
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: $text-black-secondary;
+}
+.news-letter {
+  margin: 6rem 0 0 1rem;
+  &__input{
+    width: 40rem;
+    padding: 2.8rem 2.5rem;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    border-radius: 10rem;
+    margin-right: 2rem;
+    &:placeholder-shown {
+      font-size: 1.8rem;
+    }
+  }
+  &__button {
+    background: none;
+    border: none;
+    background-color: $text-black;
+    padding: 2.4rem 4rem;
+    border-radius: 10rem;
+  }
+  &__link {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+  }
+}
