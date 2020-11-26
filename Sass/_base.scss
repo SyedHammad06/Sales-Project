@@ -13,8 +13,24 @@ body{
   font-weight: 400;
   line-height: 1.5;
   color: #1E2432;
+  overflow-x: hidden;
 }
+
 $color-blue-1: #4F9AFF;
+$color-blue-2: #BCDCE8;
+$color-purple-1: #8C45FF;
+$color-blue-3: #2749BA;
+$color-yellow-2: #fad636;
+$color-pink-1: #F0A6AB;
+$color-green-1: #6FE1B4;
+$color-blue-4: #4F9AFF;
+$color-green-2: #55B24A;
+$color-yellow-1: rgba(247, 217, 83, 0.8);
 $text-black: #1E2432;
 $text-black-secondary: #9CA1AF;
-$color-yellow-1: rgba(247, 217, 83, 0.8);
+
+@mixin shape($value1, $value2, $value3) {
+  width: $value1;
+  height: $value2;
+  background-color: $value3;
+}
