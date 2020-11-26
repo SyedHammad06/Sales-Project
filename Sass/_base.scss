@@ -34,3 +34,9 @@ $text-black-secondary: #9CA1AF;
   height: $value2;
   background-color: $value3;
 }
+%btn {
+  background: none;
+  border: none;
+  padding: 2.4rem 4rem;
+  border-radius: 10rem;
+}
