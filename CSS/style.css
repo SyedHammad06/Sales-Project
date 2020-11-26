@@ -1,0 +1,50 @@
+.div-2{
+    margin-top: 5%;
+    height: 100rem;
+}
+.sections{
+    display: flex;
+    height: 100rem;
+}
+.section-1{
+    width: 60%;
+    background-color: rgb(0, 0, 184);
+}
+.section-1 img{
+    position: relative;
+    height: 700px;
+    width: 700px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+.section-2{
+    width: 50%;
+    margin-left: 10%;
+}
+.point{
+    color: rgb(142, 145, 173);
+    font-size: x-large;
+    list-style: none;
+    margin-top: 20%;
+    font-weight: 900;
+}
+.para{
+    color: rgb(102, 102, 102);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10%;
+    width: 70%;
+
+}
+.heading2{
+    font-size: 65px;
+    font-weight: 300;
+    border-bottom: 5px solid;
+}
+.lightblue_circle{
+    height: 70rem;
+    background-color: rgb(58, 141, 250);
+    z-index: -3;
+    border-radius: 0px 0px 0px 200%;
+}

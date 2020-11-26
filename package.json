@@ -1,0 +1,24 @@
+{
+  "name": "Sales-Project",
+  "version": "1.0.0",
+  "description": "a markup landing page website",
+  "main": "anime.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyedHammad06/Sales-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SyedHammad06/Sales-Project/issues"
+  },
+  "homepage": "https://github.com/SyedHammad06/Sales-Project#readme",
+  "dependencies": {
+    "animejs": "^3.2.1"
+  },
+  "devDependencies": {}
+}
