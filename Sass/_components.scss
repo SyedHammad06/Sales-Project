@@ -1,5 +1,4 @@
 .nav {
-  font-size: 2rem;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -16,17 +15,17 @@
     text-decoration: none;
     color: $text-black;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 .logo-container {
   &__logo {
-    @include shape(4rem, 8rem, $color-blue-1);
+    @include shape(3rem, 6rem, $color-blue-1);
     border-radius: 8rem 0 0 8rem;
-    margin-right: 8rem;
+    margin-right: 6rem;
     position: relative;
     &--1 {
-      @include shape(6rem, 3rem, $color-yellow-1)
+      @include shape(4rem, 2rem, $color-yellow-1)
       border-radius: 0 0 6rem 6rem;
       margin-right: 8rem;
       position: absolute;
@@ -37,25 +36,25 @@
 }
 .main-heading {
   width: 80%;
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 400;
-  margin-top: 18.8rem;
+  margin-top: 16rem;
   span{
     display: inline-block;
-    border-bottom: .6rem solid $text-black;
+    border-bottom: .4rem solid $text-black;
   }
 }
 .main-text {
   width: 72%;
   margin-top: 4rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: $text-black-secondary;
 }
 .news-letter {
   margin: 6rem 0 0 1rem;
   &__input{
     width: 40rem;
-    padding: 2.8rem 2.5rem;
+    padding: 2rem 2rem;
     background-color: rgb(238, 238, 238);
     border: none;
     border-radius: 10rem;
@@ -70,6 +69,7 @@
   }
   &__button {
     @extend %btn;
+    padding: 1.9rem 3.8rem;
     background-color: $text-black;
   }
   &__link {
@@ -85,11 +85,12 @@
   width: 100%;
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: 28rem 12rem 8rem 24rem 19rem;
-  grid-template-rows: 20rem 20rem 12rem 14rem 15rem 15rem 10rem;
+  // grid-template-columns: 28rem 12rem 8rem 24rem 19rem;
+  grid-template-columns: 26% 16% 8% 30% 20%;
+  grid-template-rows: 14rem 20rem 10rem 12rem 15rem 15rem 10rem;
   &__sq1{
     grid-area: 1 / 1 / 2 / 3;
-    @include shape(40rem, 40rem, $color-blue-2);
+    @include shape(100%, 34rem, $color-blue-2);
     img{
       width: 100%;
       height: 100%;
@@ -97,19 +98,19 @@
   }
   &__sq2{
     grid-area: 1 / 3 / 1 / 4;
-    @include shape(8rem, 7rem, $color-purple-1);
+    @include shape(100%, 6rem, $color-purple-1);
     border-radius: 0 0 8rem 0;
   }
   &__sq3{
     grid-area: 1 / 4 / 1 / 6;
-    @include shape(50rem, 20rem, #fff);
+    @include shape(100%, 14rem, #fff);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     &--navItem{
       list-style: none;
-      font-size: 2rem;
-      margin: 6.2rem 4rem 0 4rem;
+      font-size: 1.5rem;
+      margin: 4.6rem 2rem 0 4rem;
     }
     &--navLink{
       text-decoration: none;
@@ -120,25 +121,25 @@
       @extend %btn;
       padding: 1.5rem 2.4rem;
       background-color: rgba(236, 236, 236, 0.5);
-      font-size: 2rem;
+      font-size: 1.4rem;
       font-weight: 600;
-      margin-top: 5rem;
+      margin-top: 3.4rem;
       color: $text-black;
     }
   }
   &__sq4{
     grid-area: 2 / 3 / 4 / 5;
-    @include shape(32rem, 32rem, $color-green-1);
+    @include shape(100%, 30rem, $color-green-1);
     border-radius: 20rem 0 0 0;
     img {
       width: 100%;
-      height: 95%;
-      margin-top: 1.8rem;
+      height: 90%;
+      margin-top: 2.8rem;
     }
   }
   &__sq5{
     grid-area: 2 / 5 / 4 / 6;
-    @include shape(19rem, 32rem, $color-blue-3);
+    @include shape(100%, 30rem, $color-blue-3);
     &--sc1{
       @include shape(100%, 100%, $color-blue-4);
       position: relative;
@@ -155,25 +156,25 @@
   }
   &__sq6{
     grid-area: 3 / 1 / 4 / 2;
-    @include shape(28rem, 12rem, $color-blue-3);
+    @include shape(100%, 10rem, $color-blue-3);
   }
   &__sq7{
     grid-area: 3 / 2 / 4 / 3;
-    @include shape(12rem, 12rem , $color-yellow-2);
+    @include shape(100%, 10rem , $color-yellow-2);
   }
   &__sq8{
     grid-area: 4 / 1 / 5 / 2;
     justify-self: flex-end;
-    @include shape(12rem, 14rem, $color-green-1);
+    @include shape(60%, 12rem, $color-green-1);
     border-radius: 0 0 0 12rem;
   }
   &__sq9{
     grid-area: 4 / 2 / 5 / 3;
-    @include shape(12rem, 14rem, $color-green-2);
+    @include shape(100%, 12rem, $color-green-2);
   }
   &__sq10{
     grid-area: 4 / 3 / 5 / 4;
-    @include shape(14rem, 14rem, $color-yellow-2);
+    @include shape(195%, 12rem, $color-yellow-2);
     border-radius: 50%;
     position: relative;
     &--sc1{
@@ -189,25 +190,25 @@
     grid-area: 4 / 4 / 5 / 5;
     justify-self: flex-end;
     align-self: flex-end;
-    transform: translateX(25px);
-    @include shape(20.5rem, 13rem, $color-blue-4);
+    transform: translateX(20px);
+    @include shape(85%, 11rem, $color-blue-4);
     border-radius: 12rem 12rem 0 0;
   }
   &__sq12 {
     grid-area: 4 / 5 / 5 / 6;
-    @include shape(19rem, 14rem, $color-yellow-2);
+    @include shape(100%, 12rem, $color-yellow-2);
     border-radius: 0 0 0 14rem;
   }
   &__sq13{
     grid-area: 5 / 1 / 6 / 2;
-    @include shape(16rem, 16rem, $color-yellow-2);
+    @include shape(60%, 12rem, $color-yellow-2);
     justify-self: flex-end;
-    border-radius: 0 16rem 0 0;
-    transform: translateY(-45px);
+    border-radius: 0 20rem 0 0;
+    transform: translateY(-31px);
   }
   &__sq14{
     grid-area: 5 / 2 / 7 / 4;
-    @include shape(30rem, 30rem, $color-pink-1);
+    @include shape(160%, 30rem, $color-pink-1);
     border-radius: 0 15rem 0 0;
     img{
       width: 100%;
@@ -217,20 +218,20 @@
   &__sq15{
     grid-area: 5 / 4 / 7 / 5;
     justify-self: flex-end;
-    @include shape(16.5rem, 30rem, $color-yellow-2);
+    @include shape(70%, 30rem, $color-yellow-2);
     border-radius: 16rem 0 0 16rem;
-    transform: translateX(25px);
+    transform: translateX(43px);
   }
   &__sq16{
     grid-area: 5 / 5 / 6 / 6;
-    @include shape(12rem, 12rem, $color-green-2);
-    transform: translateX(25px);
-    border-radius: 0 0 15rem 0;;
+    @include shape(73%, 12.5rem, $color-green-2);
+    transform: translateX(42px);
+    border-radius: 0 0 15rem 0;
   }
   &__sq17{
     grid-area: 6 / 5 / 7 / 6;
-    @include shape(10rem, 17.5rem, $color-pink-1);
-    transform: translate(25px, -29px);
+    @include shape(65%, 17.5rem, $color-pink-1);
+    transform: translate(42px, -25px);
     border-radius: 0 18rem 18rem 0;
     position: relative;
     &--sc{
@@ -244,18 +245,18 @@
   }
   &__sq18{
     grid-area: 7 / 2 / 8 / 4;
-    @include shape(30rem, 10rem, $color-blue-3);
+    @include shape(158.8%, 10rem, $color-blue-3);
     border-radius: 0 10rem 0 0;
   }
   &__sq19{
     grid-area: 7 / 4 / 8 / 5;
-    @include shape(20rem, 10rem, $color-purple-1);
-    transform: translateX(101px);
+    @include shape(72.8%, 10rem, $color-purple-1);
+    transform: translateX(110px);
   }
   &__sq20{
     grid-area: 7 / 5 / 8 / 6;
-    @include shape(13rem, 10rem, $color-blue-4);
-    transform: translateX(61px);
+    @include shape(70%, 10rem, $color-blue-4);
+    transform: translateX(43px);
     border-radius: 0 10rem 0 0;
   }
 }
@@ -279,8 +280,131 @@
   .logo-container{
     margin-left: 4rem;
   }
+  .grid{
+    width: 100%;
+  }
   .grid__sq3--navItem, .grid__sq3--btn{
     display: none;
   }
 }
-@media 
+@media (max-width: 500px){
+  .logo-container {
+    &__logo {
+      @include shape(2rem, 4rem, $color-blue-1);
+      position: relative;
+      &--1 {
+        @include shape(3rem, 1.5rem, $color-yellow-1)
+        position: absolute;
+        bottom: .5rem;
+        left: .6rem;
+      }
+    }
+  }
+  .main-heading {
+    width: 60%;
+    margin: 10rem auto 0 auto;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .main-text{
+    font-size: 1.5rem;
+  }
+  .news-letter{
+    margin: 2rem auto 6rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__input{
+      display: none;
+    }
+    &__button{
+      margin: 0;
+    }
+    &__link{
+      font-size: 1.5rem;
+    }
+  }
+  .grid{
+    grid-template-rows: 8rem 10rem 6rem 6rem 11rem 7rem 6rem;
+    &__sq1{
+      @include shape(100%, 20rem, $color-blue-2);
+    }
+    &__sq2{
+      @include shape(80%, 3rem, $color-purple-1);
+    }
+    &__sq3{
+      @include shape(100%, 5rem, #fff);
+    }
+    &__sq4{
+      @include shape(106%, 16rem, $color-green-1);
+      img{
+        margin: 2.3rem 0 0 2.8rem;
+        width: 80%;
+        height: 85%;
+      }
+    }
+    &__sq5{
+      @include shape(90%, 16rem, $color-blue-3);
+      margin-left: .9rem;
+    }
+    &__sq6{
+      @include shape(100%, 6rem, $color-blue-3);
+    }
+    &__sq7{
+      @include shape(100%, 6rem , $color-yellow-2);
+    }
+    &__sq8{
+      @include shape(55%, 6rem, $color-green-1);
+    }
+    &__sq9{
+      @include shape(100%, 6rem, $color-green-2);
+    }
+    &__sq10{
+      @include shape(185%, 6rem, $color-yellow-2);
+      transform: translateX(1px);
+    }
+    &__sq11{
+      @include shape(85%, 5.8rem, $color-blue-4);
+      transform: translateX(15px);
+    }
+    &__sq12 {
+      @include shape(90%, 6rem, $color-yellow-2);
+      transform: translateX(8px);
+    }
+    &__sq13{
+      @include shape(60%, 8rem, $color-yellow-2);
+      transform: translateY(-10px);
+    }
+    &__sq14{
+      @include shape(160%, 18rem, $color-pink-1);
+      border-radius: 0 8rem 0 0;
+      img{
+        height: 95%;
+        margin-top: .9rem;
+      }
+    }
+    &__sq15{
+      @include shape(72%, 18rem, $color-yellow-2);
+      transform: translateX(24px);
+    }
+    &__sq16{
+      @include shape(70%, 7.5rem, $color-green-2);
+      transform: translateX(24px);
+    }
+    &__sq17{
+      @include shape(65%, 10.5rem, $color-pink-1);
+      transform: translate(24px, -30px);
+    }
+    &__sq18{
+      @include shape(158.8%, 6rem, $color-blue-3);
+    }
+    &__sq19{
+      @include shape(72.8%, 6rem, $color-purple-1);
+      transform: translateX(60px);
+    }
+    &__sq20{
+      @include shape(70%, 6rem, $color-blue-4);
+      transform: translateX(25px);
+    }
+  }
+}
