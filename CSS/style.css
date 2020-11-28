@@ -75,17 +75,28 @@
     }
     .section-2{
         width: 100%;
-        border: 1px solid;
     }
 }
 @media screen and (max-width:1110px){
     .heading2{
         width: 40%;
     }
+    .section-1{
+        width: 100%;
+    }
+    .section-2{
+        width: 100%;
+    }
 }
 @media screen and (max-width:1110px){
     .heading2{
         width: 50%;
+    }
+    .section-1{
+        width: 100%;
+    }
+    .section-2{
+        width: 100%;
     }
 }
 @media screen and (max-width:666px){
@@ -96,6 +107,12 @@
         height: 500px;
         width: 500px;
     }
+    .section-1{
+        width: 100%;
+    }
+    .section-2{
+        width: 100%;
+    }
 }
 @media screen and (max-width:425px){
     .heading2{
@@ -104,5 +121,11 @@
     .section-1 img{
         height: 450px;
         width: 450px;
+    }
+    .section-1{
+        width: 100%;
+    }
+    .section-2{
+        width: 100%;
     }
 }
