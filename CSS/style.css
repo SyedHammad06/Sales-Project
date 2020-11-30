@@ -27,7 +27,7 @@
 .section-2{
     height: 100rem;
     width: 50%;
-    padding-left: 10%;
+
 }
 .point{
     color: rgb(142, 145, 173);
@@ -68,7 +68,7 @@
 }
 @media screen and (max-width:1200px){
     .sections{
-        display:block;
+        display: block;
     }
     .section-1{
         width: 100%;
@@ -79,7 +79,7 @@
 }
 @media screen and (max-width:1110px){
     .heading2{
-        width: 40%;
+        width: 10%;
     }
     .section-1{
         width: 100%;
@@ -90,13 +90,17 @@
 }
 @media screen and (max-width:1110px){
     .heading2{
-        width: 50%;
+        width: 35%;
     }
     .section-1{
         width: 100%;
     }
     .section-2{
+        text-align: center;
         width: 100%;
+    }
+    .point{
+        margin: 10% 0%;
     }
 }
 @media screen and (max-width:666px){
